@@ -22,6 +22,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+
 // Authentication Routes (Guest-only)
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])
     ->middleware('guest')
@@ -33,8 +34,17 @@ Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])
     ->name('logout');
 
 // Admin Routes (Only accessible to authenticated users with 'is_admin' role)
-Route::resource('admin', AdminController::class)
-    ->middleware('auth', 'is_admin');
+
+
+    Route::middleware(['auth', 'verified'])->group(function () {
+        Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+        Route::get('/admin/view-flight', [AdminController::class, 'viewFlight'])->name('admin.view-flight');
+        Route::get('/admin/view-hotel', [AdminController::class, 'viewHotel'])->name('admin.view-hotel');
+        Route::get('/admin/view-user-flight/{id}', [AdminController::class, 'viewUserFlight'])->name('admin.view-user-flight');
+        Route::get('/admin/view-user-hotel/{id}', [AdminController::class, 'viewUserHotel'])->name('admin.view-user-hotel');
+
+    });
+
 
 // Profile Routes (Accessible only to authenticated users)
 Route::get('/profile', [ProfileController::class, 'edit'])

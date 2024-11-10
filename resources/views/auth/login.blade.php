@@ -21,10 +21,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('img/apple-icon.png') }}">
+  <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}">
   <title>
-    Great Travels
+    Booking Travels
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700" rel="stylesheet" />
@@ -35,7 +35,8 @@
   <script src="https://kit.fontawesome.com/349ee9c857.js" crossorigin="anonymous"></script>
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
-  <link id="pagestyle" href="../assets/css/corporate-ui-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <link  id="pagestyle" rel="stylesheet" href="{{ asset('css/corporate-ui-dashboard.css?v=1.0.0') }}">
+
 </head>
 
 <body class="">
@@ -105,10 +106,11 @@
             </div>
             <div class="col-md-6">
               <div class="position-absolute w-40 top-0 end-0 h-100 d-md-block d-none">
-                <div class="oblique-image position-absolute fixed-top ms-auto h-100 z-index-0 bg-cover ms-n8" style="background-image:url('../assets/img/image-sign-in.jpg')">
+                <div class="oblique-image position-absolute fixed-top ms-auto h-100 z-index-0 bg-cover ms-n8" style="background-image: url('{{ asset('img/image-sign-in.jpg') }}');">
+
                   <div class="blur mt-12 p-4 text-center border border-white border-radius-md position-absolute fixed-bottom m-4">
                     <h2 class="mt-3 text-dark font-weight-bold">Sign in to your admin dashboard</h2>
-                    <h6 class="text-dark text-sm mt-5">Copyright Great Travels</h6>
+                    <h6 class="text-dark text-sm mt-5">Copyright Booking Travels</h6>
                   </div>
                 </div>
               </div>

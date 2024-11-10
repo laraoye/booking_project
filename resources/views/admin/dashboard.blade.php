@@ -18,21 +18,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="url('{{ asset('img/apple-icon.png') }}');">
+  <link rel="icon" type="image/png" href="url('{{ asset('img/favicon.png') }}');">
   <title>
-    Great Travels
+    Booking Travels
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700" rel="stylesheet" />
   <!-- Nucleo Icons -->
-  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
-  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <link href="{{ asset('css/nucleo-icons.css') }}" rel="stylesheet" />
+  <link href="{{ asset('css/nucleo-svg.css') }}" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/349ee9c857.js" crossorigin="anonymous"></script>
-  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <link href="{{ asset('css/nucleo-svg.css') }}');" rel="stylesheet" />
   <!-- CSS Files -->
-  <link id="pagestyle" href="../assets/css/corporate-ui-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <link id="pagestyle" href="{{ asset('css/corporate-ui-dashboard.css?v=1.0.0') }}');"  rel="stylesheet" />
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
@@ -112,7 +112,7 @@
             </li>
             <li class="nav-item ps-2 d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-body p-0">
-                <img src="../assets/img/team-2.jpg" class="avatar avatar-sm" alt="avatar" />
+                <img src="{{ asset('img/team-2.jpg') }}');" class="avatar avatar-sm" alt="avatar" />
               </a>
             </li>
           </ul>
@@ -130,7 +130,7 @@
               <div class="swiper-slide">
                 <div>
                   <div class="card card-background shadow-none border-radius-xl card-background-after-none align-items-start mb-0">
-                    <div class="full-background bg-cover" style="background-image: url('../assets/img/img-1.png')"></div>
+                    <div class="full-background bg-cover" style="background-image: url('{{ asset('img/img-1.png') }}');"></div>
                     <div class="card-body text-start px-3 py-0 w-100">
                       <div class="row mt-12">
                         <div class="col-sm-3 mt-auto">
@@ -149,7 +149,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="card card-background shadow-none border-radius-xl card-background-after-none align-items-start mb-0">
-                  <div class="full-background bg-cover" style="background-image: url('../assets/img/img-4.png')"></div>
+                  <div class="full-background bg-cover" style="background-image: url('{{ asset('img/img-4.png') }}');"></div>
                   <div class="card-body text-start px-3 py-0 w-100">
                     <div class="row mt-12">
                       <div class="col-sm-3 mt-auto">
@@ -167,7 +167,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="card card-background shadow-none border-radius-xl card-background-after-none align-items-start mb-0">
-                  <div class="full-background bg-cover" style="background-image: url('../assets/img/img-3.jpg')"></div>
+                  <div class="full-background bg-cover" style="background-image: url('{{ asset('img/img-3.jpg') }}');"></div>
                   <div class="card-body text-start px-3 py-0 w-100">
                     <div class="row mt-12">
                       <div class="col-sm-3 mt-auto">
@@ -185,7 +185,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="card card-background shadow-none border-radius-xl card-background-after-none align-items-start mb-0">
-                  <div class="full-background bg-cover" style="background-image: url('../assets/img/img-4.png')"></div>
+                  <div class="full-background bg-cover" style="background-image: url('{{ asset('img/img-4.png') }}');"></div>
                   <div class="card-body text-start px-3 py-0 w-100">
                     <div class="row mt-12">
                       <div class="col-sm-3 mt-auto">
@@ -317,7 +317,7 @@
                 © <script>
                   document.write(new Date().getFullYear())
                 </script>
-               Great Travels
+               Booking Travels
               </div>
             </div>
 
@@ -333,7 +333,7 @@
     <div class="card shadow-lg ">
       <div class="card-header pb-0 pt-3 ">
         <div class="float-start">
-          <h5 class="mt-3 mb-0">Great Travels</h5>
+          <h5 class="mt-3 mb-0">Booking Travels</h5>
           <p>See our dashboard options.</p>
         </div>
         <div class="float-end mt-4">
@@ -392,12 +392,12 @@
     </div>
   </div>
   <!--   Core JS Files   -->
-  <script src="../assets/js/core/popper.min.js"></script>
-  <script src="../assets/js/core/bootstrap.min.js"></script>
-  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
-  <script src="../assets/js/plugins/chartjs.min.js"></script>
-  <script src="../assets/js/plugins/swiper-bundle.min.js" type="text/javascript"></script>
+  <script src="{{ asset('js/core/popper.min.js') }}"></script>
+  <script src="{{ asset('js/core/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('js/plugins/perfect-scrollbar.min.js') }}"></script>
+  <script src="{{ asset('js/plugins/smooth-scrollbar.min.js') }}"></script>
+  <script src="{{ asset('js/plugins/chartjs.min.js') }}"></script>
+  <script src="{{ asset('js/plugins/swiper-bundle.min.js') }}" type="text/javascript"></script>
   <script>
     if (document.getElementsByClassName('mySwiper')) {
       var swiper = new Swiper(".mySwiper", {
@@ -656,7 +656,7 @@
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Corporate UI Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="../assets/js/corporate-ui-dashboard.min.js?v=1.0.0"></script>
+  <script src="{{ asset('js/corporate-ui-dashboard.min.js?v=1.0.0') }}"></script>
 </body>
 
 </html>
