@@ -97,15 +97,22 @@
                     </div>
                   </a>
                 </li>
-                <li class="mb-2">
-                    <a class="dropdown-item border-radius-md" href="{{ route('logout') }}">
-                      <div class="d-flex py-1">
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf <!-- This token is necessary to prevent CSRF attacks -->
 
-                          <span class="font-weight-bold">Log out</span>
+                    <li class="mb-2">
+                        <div class="d-flex py-1">
+                            <a class="dropdown-item border-radius-md" href="{{ route('logout') }}"
+                               onclick="event.preventDefault(); this.closest('form').submit();">
+                                <span class="font-weight-bold">Logout</span>
+                            </a>
+                        </div>
+                    </li>
+                </form>
 
-                      </div>
-                    </a>
-                  </li>
+
+                    </form>
+
 
 
               </ul>
